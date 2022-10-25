@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: brown;
+  color: bisque;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Sofia';
+  margin: 10px 0;
+}
+
+#logo-header {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#nav-bar li {
+  list-style: none;
+  font-size: 24px;
+}
+
+#hero-bg {
+  background-image: url("https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?cs=srgb&dl=pexels-emre-can-acer-2079438.jpg&fm=jpg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+#hero-title {
+  display: block;
+  margin: 0;
+  padding: 100px 100px 10px;
+  max-width: 50%;
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+
+#hero-text {
+  display: block;
+  max-width: 30%;
+  color: white;
+  font-size: 32px;
+}
+
+#hero-btn {
+  background-color: blanchedalmond;
+  color: brown;
+  border: none;
+  border-radius: 8%;
+  padding: 10px;
+  font-size: 32px;
+}
