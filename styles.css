@@ -1,21 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
+/*GLOBAL SETTINGS*/
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: brown;
-  color: bisque;
+body {
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.6em;
   font-family: 'Sofia';
   margin: 10px 0;
+}
+
+h2, p {
+  color: white;
+}
+
+/*HEADER AND NAVBAR*/
+header {
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #FD5DA8;
+  color: bisque;
 }
 
 #logo-header {
@@ -30,49 +44,59 @@ h1 {
 }
 
 #nav-bar li {
-  list-style: none;
+  padding-top: 15px;
+  list-style-type: none;
   font-size: 24px;
 }
 
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-bar a:hover {
+  color: bisque;
+  background-color: #ca4a86;
+}
+
+/*HERO SECTION*/
 #hero-bg {
-  background-image: url("https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?cs=srgb&dl=pexels-emre-can-acer-2079438.jpg&fm=jpg");
+  background-image: url("hero.jpg");
   height: 800px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
+#hero {
+  padding: 10% 5%;
+  font-size: 2.4em;
+  width: 50%;
 }
 
-#hero-title {
-  display: block;
-  margin: 0;
-  padding: 100px 100px 10px;
-  max-width: 50%;
-  font-size: 64px;
-  font-weight: bold;
-  color: white;
+#hero p {
+  margin-top: 15px;
+  font-size: 28px;
 }
 
-#hero-text {
-  display: block;
-  max-width: 30%;
-  color: white;
-  font-size: 32px;
-}
-
-#hero-btn {
-  background-color: blanchedalmond;
-  color: brown;
-  border: none;
-  border-radius: 8%;
+#subscribe-input {
+  margin-top: 24px;
+  border-radius: 6px;
+  font-size: 16px;
   padding: 10px;
-  font-size: 32px;
+  width: 30%;
+}
+
+#subscribe-btn {
+  background-color: yellow;
+  border-radius: 6px;
+  width: 15%;
+  font-size: 16px;
+  padding: 12px;
+}
+
+#subscribe-btn:hover {
+  background-color: goldenrod;
 }
