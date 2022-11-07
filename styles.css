@@ -57,7 +57,7 @@ header {
 
 #nav-bar a:hover {
   color: bisque;
-  background-color: #ca4a86;
+  text-decoration: underline;
 }
 
 /*HERO*/
@@ -120,7 +120,7 @@ header {
 }
 
 .menu-img {
-  border: 6px solid #FD5DA8;
+  border: 4px solid #FD5DA8;
   border-radius: 10%;
 }
 
@@ -132,6 +132,40 @@ header {
 
 /*LOCATIONS*/
 #locations {
+  display: flex;
+  justify-content: space-around;
   height: 700px;
   background-color: blanchedalmond;
+}
+
+#address-info {
+  width: 25%;
+  margin: 15px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  border: 1px solid grey;
+}
+
+.address {
+  padding: 10px;
+}
+
+#map {
+  justify-content: center;
+  align-self: center;
+  width: 40%;
+  height: 90%;
+}
+
+#events {
+  height: 700px;
+  background-color: whitesmoke;
+}
+
+footer p {
+  background-color: #FD5DA8;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
